@@ -1,7 +1,7 @@
 '.source.js':
   'New Map':
     'prefix': 'map'
-    'body': '${1:map} = new Map("$1", {\n\tbasemap: "topo", \n\tcenter: [-122.45, 37.75], // longitude, latitude \n\t zoom: 13\n\t}'
+    'body': '${1:map} = new Map("${2:MapDiv}", {\n\tbasemap: "${3:topo}", \n\tcenter: [${5:-122.45}, ${6:37.75}], // longitude, latitude \n\t zoom: ${4:13}\n\t}\n ${7:}'
 
   'Home Button':
     'prefix': 'homeb'
