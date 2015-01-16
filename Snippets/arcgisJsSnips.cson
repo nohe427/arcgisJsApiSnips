@@ -6,3 +6,7 @@
   'Home Button':
     'prefix': 'homeb'
     'body': 'var ${1:home} = new HomeButton({\n\tmap: map\n\t}, "HomeButton");\n\t${1:home}.startup();'
+
+  'Overview Map':
+    'prefix': 'overview'
+    'body': 'var ${1:overviewMapDijit} = new OverviewMap({\n\tmap: ${2:map},\n\tvisible: true\n\t});\n\t${1:overviewMapDijit}.startup();\n ${3:}'
