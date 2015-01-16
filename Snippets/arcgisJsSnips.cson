@@ -3,7 +3,6 @@
     'prefix': 'map'
     'body': '${1:map} = new Map("$1", {\n\tbasemap: "topo", \n\tcenter: [-122.45, 37.75], // longitude, latitude \n\t zoom: 13\n\t}'
 
-'.source.js':
   'Home Button':
     'prefix': 'homeb'
     'body': 'var ${1:home} = new HomeButton({\n\tmap: map\n\t}, "HomeButton");\n\t${1:home}.startup();'
