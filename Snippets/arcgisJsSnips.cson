@@ -14,3 +14,7 @@
   'Require':
     'prefix': 'require'
     'body': 'require([\n${1:}\n],function(${2:}){\n${3:}\n});'
+
+  'Legend':
+    'prefix': 'legend'
+    'body': 'var ${1:legend} = new Legend({\n\tmap: ${2:map}\n\tautoUpdate: true\n}, "${3:legendDiv}");\n${1:legend}.startup();\n${4:}'
