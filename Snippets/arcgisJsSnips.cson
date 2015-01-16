@@ -10,3 +10,7 @@
   'Overview Map':
     'prefix': 'overview'
     'body': 'var ${1:overviewMapDijit} = new OverviewMap({\n\tmap: ${2:map},\n\tvisible: true\n\t});\n\t${1:overviewMapDijit}.startup();\n ${3:}'
+
+  'Require':
+    'prefix': 'require'
+    'body': 'require([\n${1:}\n],function(${2:}){\n${3:}\n});'
