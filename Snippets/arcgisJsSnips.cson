@@ -23,3 +23,7 @@
   'Print Dijit':
     'prefix': 'printer'
     'body': 'var ${1:printer} = new Print({\n\tmap: ${2:map},\n\turl: "${3:http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task}"\n}, dom.byId("${4:printButton}"));\n${5:}'
+
+  'Scalebar':
+    'prefix': 'scalebar'
+    'body': 'var ${1:scalebar} = new Scalebar({\n\tmap: ${2:map},\n\tattachTo: "${3:top-right}",  //Valid options are "top-right","bottom-right","top-center","bottom-center","bottom-left","top-left". The default value is "bottom-left".\n\tscalebarStyle: "${4:ruler}", //Line may be used as well.\n\tscalebarUnit: "${5:english}" //Metric or dual may be used.\n\t});\n${6:}'
