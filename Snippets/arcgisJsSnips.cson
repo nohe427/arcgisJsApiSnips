@@ -27,3 +27,11 @@
   'Scalebar':
     'prefix': 'scalebar'
     'body': 'var ${1:scalebar} = new Scalebar({\n\tmap: ${2:map},\n\tattachTo: "${3:top-right}",  //Valid options are "top-right","bottom-right","top-center","bottom-center","bottom-left","top-left". The default value is "bottom-left".\n\tscalebarStyle: "${4:ruler}", //Line may be used as well.\n\tscalebarUnit: "${5:english}" //Metric or dual may be used.\n\t});\n${6:}'
+
+  'Draw Toolbar':
+    'prefix': 'drawToolbar'
+    'body': 'var ${1:toolbar} = new Draw(${2:map}, {\n\ttooltipOffset: ${3:20},\n\tdrawTime: ${4:90},\n\tshowTooltips: ${5:true},\n\ttolerance: ${6:8}\n\t});\n${7:}'
+
+  'Navigation Toolbar':
+    'prefix': 'navToolbar'
+    'body': 'var ${1:navToolbar} = new Navigation(${2:map});\n${3:}'
