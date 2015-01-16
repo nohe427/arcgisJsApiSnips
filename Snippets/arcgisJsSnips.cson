@@ -18,3 +18,8 @@
   'Legend':
     'prefix': 'legend'
     'body': 'var ${1:legend} = new Legend({\n\tmap: ${2:map}\n\tautoUpdate: true\n}, "${3:legendDiv}");\n${1:legend}.startup();\n${4:}'
+
+
+  'Print Dijit':
+    'prefix': 'printer'
+    'body': 'var ${1:printer} = new Print({\n\tmap: ${2:map},\n\turl: "${3:http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task}"\n}, dom.byId("${4:printButton}"));\n${5:}'
