@@ -5,7 +5,7 @@
 
   'Home Button':
     'prefix': 'homeb'
-    'body': 'var ${1:home} = new HomeButton({\n\tmap: map\n\t}, "HomeButton");\n\t${1:home}.startup();'
+    'body': 'var ${1:home} = new HomeButton({\n\tmap: map\n\t}, "HomeButton");\n\t${1:home}.startup();\n${2:}'
 
   'Overview Map':
     'prefix': 'overview'
