@@ -90,6 +90,10 @@
     'prefix': 'polygon'
     'body': 'var ${1:polygonJson}  = {"rings":[[[-122.63,45.52],[-122.57,45.53],[-122.52,45.50],[-122.49,45.48],\n[-122.64,45.49],[-122.63,45.52],[-122.63,45.52]]],"spatialReference":{"wkid":4326 }};\nvar ${2:polygon} = new Polygon(${1:polygonJson});\n${3:}'
 
+  'Polyline':
+    'prefix': 'polyline'
+    'body': 'var ${1:polylineJson} = {\n\t"paths":[[[-122.68,45.53], [-122.58,45.55],\n\t[-122.57,45.58],[-122.53,45.6]]],\n\t"spatialReference":{"wkid":4326}\n};\n\nvar ${2:polyline} = new Polyline(${1:polylineJson});\n${3:}'
+
   # esri/toolbars
   'Draw Toolbar':
     'prefix': 'drawToolbar'
