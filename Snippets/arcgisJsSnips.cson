@@ -11,17 +11,54 @@
     'body': '${1:map} = new Map("${2:MapDiv}", {\n\tbasemap: "${3:topo}", \n\tcenter: [${5:-122.45}, ${6:37.75}], // longitude, latitude \n\t zoom: ${4:13}\n\t}\n ${7:}'
 
   # esri/dijit
+
+  'Attribution':
+    'prefix': 'attribution'
+    'body': 'var ${1:attribution} = new Attribution({\n\tmap: ${2:map}\n}, "${3:attributionDiv}");\n${4:}'
+
+  'Basemap':
+    'prefix': 'basemap'
+    'body': 'var ${1:waterBasemap} = new Basemap({\n\tlayers: [${2:waterTemplateLayer}],\n\ttitle: "${3:Water Template}",\n\tthumbnailUrl:"${4:images/waterThumb.png}"\n});\n${5:}'
+
+  'Basemap Gallery':
+    'prefix': 'basemapGallery'
+    'body': 'var ${1:basemapGallery} = new BasemapGallery({\n\tshowArcGISBasemaps: ${2:true},\n\tmap: ${3:map}\n\t}, "${4:basemapGalleryDiv}");\n${5:}'
+
+  'Basemap Layer':
+    'prefix': 'basemapLayer'
+    'body': 'var ${1:publicSafetyLayer} = new BasemapLayer({\n\turl:"${2:http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/PublicSafety/PublicSafetyBasemap/MapServer}"\n\t});\n${3:}'
+
+  'Basemap Toggle':
+    'prefix': 'basemapToggle'
+    'body': 'var ${1:basemapToggle} = new BasemapToggle({\n\ttheme: "${2:basemapToggle}",\n\tmap: ${3:map},\n\tvisible: ${4:true},\n\tbasemap: "${5:hybrid}"\n\t}, "${6:<dom_id>}");\n\t${1:basemapToggle}.startup();\n${7:}'
+
+  'Bookmark Item':
+    'prefix': 'bookmarkItem'
+    'body': 'var ${1:bookmarks} = [{\n\t"extent": {\n\t\t"spatialReference": {\n\t\t\t"wkid": 102100\n\t},\n\t"xmax": -10983636.8866296,\n\t"xmin": -14411372.5423473,\n\t"ymax": 5109691.46502651,\n\t"ymin": 2707598.58754309\n\t},\n"name": "Sonara"\n}];\n${2:}'
+
+  'Bookmarks':
+    'prefix': 'bookmarks'
+    'body': 'var ${1:bookmarks} = new Bookmarks({\n\tmap: ${2:map},\n\tbookmarks: ${3:bookmarksArray}\n\t}, dom.byId("${4:bookmarks}"));\n${5:}'
+
+  'Gallery':
+    'prefix': 'gallery'
+    'body': 'var ${2:params} = {};\n${2:params}.items = itemsArray;\n${2:params}.thumbnailStyle = "${3:small}";\n\n${1:gallery} = new Gallery(${2:params}, "${4:galleryDiv}");\n${5:}'
+
   'Home Button':
     'prefix': 'homeb'
     'body': 'var ${1:home} = new HomeButton({\n\tmap: map\n\t}, "HomeButton");\n\t${1:home}.startup();\n${2:}'
 
-  'Overview Map':
-    'prefix': 'overview'
-    'body': 'var ${1:overviewMapDijit} = new OverviewMap({\n\tmap: ${2:map},\n\tvisible: true\n\t});\n\t${1:overviewMapDijit}.startup();\n ${3:}'
+  'LayerSwipe':
+    'prefix': 'layerswipe'
+    'body': 'var ${1:layerSwipe} = new LayerSwipe({\n\ttype: "${3:horizontal}",\n\ttop: ${4:250},\n\tmap: ${5:map},\n\tlayers: [ ${6:layer} ]\n\t}, "${2:widget}");\n\t${1:layerSwipe}.startup();\n${7:}'
 
   'Legend':
     'prefix': 'legend'
     'body': 'var ${1:legend} = new Legend({\n\tmap: ${2:map}\n\tautoUpdate: true\n}, "${3:legendDiv}");\n${1:legend}.startup();\n${4:}'
+
+  'Overview Map':
+    'prefix': 'overview'
+    'body': 'var ${1:overviewMapDijit} = new OverviewMap({\n\tmap: ${2:map},\n\tvisible: true\n\t});\n\t${1:overviewMapDijit}.startup();\n ${3:}'
 
   'Print Dijit':
     'prefix': 'printer'
